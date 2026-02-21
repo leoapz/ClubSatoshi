@@ -7,7 +7,7 @@ export default function Communities() {
             <div className="container mx-auto px-4 md:px-6">
 
                 <div className="text-center mb-16 animate-fade-in">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary dark:text-white">Comunidades Aliadas</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary dark:text-white">Comunidades</h2>
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto">
                         El ecosistema Bitcoin crece gracias a la colaboración. Conoce a quienes comparten nuestra visión.
                     </p>

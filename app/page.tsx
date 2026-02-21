@@ -16,7 +16,6 @@ export default function Home() {
         <About />
         <Resources />
         <Communities />
-        <BitcoinMap />
         <Contact />
       </main>
       <Footer />

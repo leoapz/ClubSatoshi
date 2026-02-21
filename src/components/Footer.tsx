@@ -7,8 +7,8 @@ export default function Footer() {
         <footer className="bg-secondary text-white py-12 border-t border-gray-800">
             <div className="container mx-auto px-4 md:px-6">
 
-                <div className="grid md:grid-cols-4 gap-8 mb-12">
-                    <div className="col-span-1 md:col-span-1">
+                <div className="flex flex-col md:flex-row md:justify-between gap-8 mb-12">
+                    <div className="md:max-w-sm">
                         <Link href="/" className="flex items-center gap-3 mb-6 group w-fit">
                             <div className="relative h-10 w-10 shrink-0">
                                 <Image
@@ -30,26 +30,6 @@ export default function Footer() {
                         <p className="text-gray-400 text-sm">
                             Impulsando la economía circular con Bitcoin. Educación, comunidad y tecnología para un futuro libre.
                         </p>
-                    </div>
-
-                    <div>
-                        <h4 className="font-bold mb-4">Plataforma</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="/" className="hover:text-primary">Inicio</Link></li>
-                            <li><Link href="/#about" className="hover:text-primary">Nosotros</Link></li>
-                            <li><Link href="/resources" className="hover:text-primary">Biblioteca de Recursos</Link></li>
-                            <li><Link href="/#communities" className="hover:text-primary">Comunidades Aliadas</Link></li>
-                            <li><Link href="/#map" className="hover:text-primary">Mapa Bitcoin</Link></li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <h4 className="font-bold mb-4">Legal</h4>
-                        <ul className="space-y-2 text-sm text-gray-400">
-                            <li><Link href="#" className="hover:text-primary">Términos de servicio</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Política de privacidad</Link></li>
-                            <li><Link href="#" className="hover:text-primary">Cookies</Link></li>
-                        </ul>
                     </div>
 
                     <div>

@@ -7,7 +7,7 @@ export default function Resources() {
             <div className="container mx-auto px-4 md:px-6">
 
                 <div className="text-center mb-16 animate-fade-in">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary dark:text-white">Biblioteca Educativa</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4 text-secondary dark:text-white">Recursos</h2>
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto">
                         Recursos seleccionados para entender Bitcoin y la economía circular.
                     </p>
