@@ -1,0 +1,117 @@
+---
+title: "Lightning Network: Micropagos Instantáneos"
+description: "Descubrí cómo Lightning Network permite realizar pagos pequeños de forma inmediata y con comisiones casi nulas."
+author: "Club Satoshi"
+category: "lightning"
+date: "2026-02-22"
+---
+
+# Lightning Network: Micropagos Instantáneos
+
+*by Club Satoshi*
+
+La red Lightning Network nace para poder realizar micropagos de manera rápida y con comisiones muy chicas. Esta red es paralela a la red principal de Bitcoin.
+
+Podríamos decir que la red original de Bitcoin se usa para mover montos medianos y grandes, y la red Lightning se usa para realizar pagos chicos, como un café, propinas, etc. Además es inmediata y con muy bajos costos de comisión.
+
+<YouTube id="z77puVIx5yo" />
+
+## Algunos ejemplos de uso
+
+<YouTube id="Bor-8a-SU9w" />
+
+<YouTube id="d68CXB0S6M8" />
+
+<YouTube id="RJNoOAoCnns" />
+
+<YouTube id="CnO0fpZtQ58" />
+
+## El problema de escalar Bitcoin
+
+La red principal de Bitcoin (on-chain) tiene algunas limitaciones:
+
+| Característica | Bitcoin On-Chain |
+|----------------|------------------|
+| Transacciones por segundo | ~7 |
+| Tiempo de confirmación | 10-60 minutos |
+| Comisión promedio | Variable (puede ser alta) |
+
+Estas limitaciones hacen que Bitcoin on-chain no sea práctico para comprar un café o pagar el almuerzo. **Lightning Network resuelve esto.**
+
+### Analogía simple
+
+Imaginá que vos y tu amigo abren una "cuenta compartida" (un canal). Pueden intercambiar dinero entre ustedes infinitas veces sin tocar la red principal de Bitcoin. Solo cuando cierran la cuenta, el saldo final se registra en la blockchain.
+
+## ¿Cómo funciona?
+
+### 1. Canales de pago
+
+Dos personas (o una persona y un nodo) abren un "canal" bloqueando Bitcoin en una transacción especial. Dentro de ese canal, pueden hacer infinitas transacciones entre sí.
+
+### 2. Red de canales
+
+Lo genial es que no necesitás un canal directo con cada persona. Si querés pagarle a Juan, y vos tenés canal con María, y María tiene canal con Juan, el pago "salta" por la red.
+
+```
+Vos → María → Juan
+```
+
+### 3. Liquidación final
+
+Cuando cierran un canal, solo se registra el balance final en la blockchain de Bitcoin. Todas las transacciones intermedias quedan "comprimidas" en una sola.
+
+## Ventajas de Lightning
+
+### Velocidad
+
+| Red | Tiempo de confirmación |
+|-----|------------------------|
+| Bitcoin on-chain | 10-60 minutos |
+| Lightning Network | 1-3 segundos |
+| Visa | 1-3 segundos |
+
+Lightning es tan rápido como las tarjetas tradicionales.
+
+### Comisiones
+
+Una transacción Lightning típica cuesta **menos de 1 satoshi** (fracciones de centavo). Esto hace viable:
+
+- Micropagos (propinas de centavos)
+- Streaming de dinero (pagar por segundo de video)
+- Pagos en comercios
+
+### Privacidad
+
+Las transacciones Lightning no quedan registradas en la blockchain pública. Solo las transacciones de apertura y cierre de canales son visibles.
+
+## Billeteras Lightning recomendadas
+
+### Para principiantes
+
+> 💡 Las wallets marcadas con ✅ son las que usamos en las juntadas de Club Satoshi.
+
+**Wallet of Satoshi** — Custodial ✅
+- La más fácil de usar, sin configuración
+- Ideal para dar los primeros pasos
+- ⚠️ La empresa custodia tus fondos, vos no tenés las llaves
+
+**Blink** — Custodial ✅
+- Simple y directa, buena para el día a día
+- Comunidad activa detrás del proyecto
+- ⚠️ Al igual que WoS, es custodial
+
+### Para usuarios intermedios
+
+**Phoenix Wallet** — No custodial
+- Vos controlás las llaves
+- Gestión automática de canales
+- Excelente balance entre seguridad y usabilidad
+
+**Muun** — No custodial
+- Interfaz muy limpia
+- Combina pagos on-chain y Lightning
+- Respaldo sencillo
+
+### Para usuarios avanzados
+
+Estamos explorando opciones. Cuando las probemos en comunidad, las sumamos acá. 🔍

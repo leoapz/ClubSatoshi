@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
@@ -74,13 +75,13 @@ export default function ResourcesPage() {
                   type="article"
                   title="¿Qué es Bitcoin? Guía Introductoria"
                   description="Entiende los conceptos básicos de Bitcoin: escasez digital, descentralización y dinero duro."
-                  link="https://clubsatoshi.notion.site/Qu-es-Bitcoin-987b4c912415414398ba0e9eb1a7cc03"
+                  link="/resources/que-es-bitcoin"
                 />
                 <ResourceCard
                   type="article"
                   title="Glosario Bitcoin"
                   description="Diccionario esencial para entender la terminología del ecosistema (HODL, Halving, FOMO, etc.)"
-                  link="https://clubsatoshi.notion.site/Glosario-Bitcoin-2ab4ed270caf4826a6c7bcef709ac399"
+                  link="/resources/glosario-bitcoin"
                 />
                 <VideoCard
                   title="Video Explicativo: ¿Qué es Bitcoin?"
@@ -105,7 +106,7 @@ export default function ResourcesPage() {
                   type="guide"
                   title="Tu Primera Compra de Satoshis"
                   description="Guía paso a paso para realizar tu primera transacción de forma segura."
-                  link="https://clubsatoshi.notion.site/Mi-primer-compra-de-Satoshis-paso-a-paso-ac70f7f9d00f4e279baf1b1594032ecf"
+                  link="/resources/mi-primer-compra-satoshis"
                 >
                   <div className="mt-6 pt-6 border-t border-gray-100 dark:border-gray-800">
                     <h4 className="font-bold text-lg mb-4 text-secondary dark:text-white">
@@ -235,7 +236,7 @@ export default function ResourcesPage() {
                     type="guide"
                     title="Mi primer billetera Bitcoin"
                     description="Aprende a instalar y configurar tu primera wallet en el celular paso a paso."
-                    link="https://clubsatoshi.notion.site/Mi-primer-billetera-Bitcoin-paso-a-paso-e18be5331408417397cf6365647caee1"
+                    link="/resources/mi-primer-billetera-bitcoin"
                   >
                     <div className="mt-4">
                       <VideoCard
@@ -254,7 +255,7 @@ export default function ResourcesPage() {
                     type="guide"
                     title="Guía de Billeteras Frías"
                     description="Máxima seguridad para tus ahorros. Qué son y por qué deberías tener una."
-                    link="https://clubsatoshi.notion.site/Billeteras-fr-as-cold-wallets-e5ffb7a2c1e242f0a8268c9f3ddd61fc"
+                    link="/resources/billeteras-frias"
                   >
                     <div className="space-y-4 mt-4">
                       <VideoCard
@@ -283,7 +284,7 @@ export default function ResourcesPage() {
                   type="article"
                   title="Qué es Lightning Network"
                   description="La capa 2 de Bitcoin que permite pagos instantáneos y con comisiones casi nulas."
-                  link="https://clubsatoshi.notion.site/Red-Lightning-Network-micropagos-be5a89842bd447cfbc922abbbe8829f6"
+                  link="/resources/lightning-network"
                 />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <VideoCard
@@ -428,6 +429,7 @@ function BadgeLink({ href, label }: { href: string; label: string }) {
 
 function ResourceCard({ type, title, description, link, children }: any) {
   const isGuide = type === "guide";
+  const isExternal = link?.startsWith("http");
   return (
     <div className="bg-white dark:bg-gray-900 p-6 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800 hover:shadow-md transition-all hover:-translate-y-1 h-full flex flex-col">
       <div
@@ -445,18 +447,27 @@ function ResourceCard({ type, title, description, link, children }: any) {
       <h3 className="text-xl font-bold mb-3 text-secondary dark:text-white">
         {title}
       </h3>
-      <p className="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-1">
+      <p className={`text-gray-500 dark:text-gray-400 text-sm mb-4 ${!children ? "flex-1" : ""}`}>
         {description}
       </p>
-      {children && <div className="mb-6 w-full">{children}</div>}
-      <a
-        href={link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 text-sm font-bold text-secondary dark:text-white hover:text-primary transition-colors"
-      >
-        Leer en Notion <ExternalLink className="w-4 h-4" />
-      </a>
+      {children && <div className="mb-6 w-full flex-1">{children}</div>}
+      {isExternal ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-sm font-bold text-secondary dark:text-white hover:text-primary transition-colors"
+        >
+          Leer en Notion <ExternalLink className="w-4 h-4" />
+        </a>
+      ) : (
+        <Link
+          href={link}
+          className="inline-flex items-center gap-2 text-sm font-bold text-secondary dark:text-white hover:text-primary transition-colors"
+        >
+          Leer artículo
+        </Link>
+      )}
     </div>
   );
 }

@@ -22,7 +22,7 @@ export default function Resources() {
                         description="La guía definitiva para entender Bitcoin desde cero: escasez, descentralización y libertad."
                         color="bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400"
                         delay="0.1s"
-                        href="/resources#que-es-bitcoin"
+                        href="/resources/que-es-bitcoin"
                     />
 
                     {/* Card 2 - Guide */}
