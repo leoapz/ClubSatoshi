@@ -1,15 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import type { ResourceFrontmatter } from "@/types/resource";
+
+export type { ResourceFrontmatter };
 
 const RESOURCES_PATH = path.join(process.cwd(), "content/resources");
-
-export interface ResourceFrontmatter {
-  title: string;
-  category: "article" | "guide";
-  description: string;
-  date: string;
-}
 
 export interface Resource {
   slug: string;

@@ -1,18 +1,9 @@
 import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
+import YouTubeFacade from "@/components/YouTubeFacade";
 
-function YouTube({ id }: { id: string }) {
-  return (
-    <div className="relative aspect-video w-full my-6 rounded-2xl overflow-hidden border border-gray-200 dark:border-gray-700 shadow-sm">
-      <iframe
-        src={`https://www.youtube.com/embed/${id}`}
-        title="YouTube video"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-        className="absolute inset-0 w-full h-full"
-      />
-    </div>
-  );
+function YouTube({ id, short }: { id: string; short?: boolean }) {
+  return <YouTubeFacade id={id} short={short} />;
 }
 
 export const mdxComponents: MDXComponents = {
