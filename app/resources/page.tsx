@@ -21,11 +21,10 @@ export default function ResourcesPage() {
       <main className="flex-1 container mx-auto px-4 md:px-6 py-12">
         <div className="text-center mb-12 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-secondary dark:text-white">
-            Biblioteca del Club
+            Recursos Club Satoshi
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-            Hemos curado los mejores videos y guías para que inicies tu camino
-            en Bitcoin con seguridad.
+            Recursos seleccionados para entender Bitcoin.
           </p>
         </div>
 
@@ -209,11 +208,11 @@ export default function ResourcesPage() {
                     videoId="_Wv37csEAz8"
                   />
                   <VideoCard
-                    title="Fiwind: Tutorial Completo"
+                    title="Depositar pesos en Lemon Cash"
                     videoId="1vRkV5X-Gmw"
                   />
                   <VideoCard
-                    title="Belo App: Guía de Uso"
+                    title="Comprar Satoshis en Lemon Cash"
                     videoId="mU5beVYFNcg"
                   />
                 </div>

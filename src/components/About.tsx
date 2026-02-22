@@ -10,9 +10,9 @@ export default function About() {
 
                 {/* Header Section */}
                 <div className="text-center mb-16 animate-fade-in">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Acerca de Nosotros</h2>
+                    <h2 className="text-3xl md:text-5xl font-bold mb-4">Quienes Somos</h2>
                     <p className="text-xl text-gray-500 max-w-2xl mx-auto">
-                        Construyendo una economía circular impulsada por Bitcoin.
+                        Una comunidad de Tucumán y el Norte Argentino que se junta a aprender, compartir y construir con Bitcoin.
                     </p>
                 </div>
 
@@ -21,11 +21,14 @@ export default function About() {
                     <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
                         <h3 className="text-2xl font-bold mb-4">Nuestro Propósito</h3>
                         <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                            En Club Satoshi, nos dedicamos a <strong>conectar personas apasionadas</strong> y crear un espacio donde todos, sin importar su experiencia, puedan aprender sobre Bitcoin.
+                            Club Satoshi nació con una idea simple: juntarnos en bares a conversar y aprender sobre Bitcoin. Somos un grupo diverso, unidos por la curiosidad y las ganas de entender esta tecnología. Con el tiempo, fuimos creciendo y nos fuimos convirtiendo en una comunidad de personas que se juntan a aprender, compartir y construir con Bitcoin.
                         </p>
                         <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                            Impulsamos la innovación y la colaboración para construir un futuro financiero más inclusivo, transparente y accesible para nuestra comunidad en Tucumán y el Norte Argentino.
+                            Si no sabés nada de Bitcoin o estás comenzando, podés sumarte y te explicamos todo lo que sabemos. La idea es que tengas una base sólida sobre qué es Bitcoin y cómo funciona. Una vez a la semana nos juntamos para conocernos, compartir experiencias, ideas y seguir aprendiendo entre todos.
                         </p>
+                        <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                            Nuestro propósito es empoderar a las personas y avanzar hacia un sistema financiero más justo y accesible, fomentando el pensamiento creativo y crítico desde Tucumán y el Norte Argentino.
+                        </p>                        
                     </div>
                     <div className="hidden md:block relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg animate-fade-in" style={{ animationDelay: "0.4s" }}>
                         <Image
@@ -47,25 +50,25 @@ export default function About() {
                         <ValueCard
                             icon={<Users className="w-8 h-8 text-primary" />}
                             title="Colaboración"
-                            description="Creemos en el poder de ayudarnos mutuamente para crecer juntos."
+                            description="Nos ayudamos entre todos. Si sabés algo, lo compartís. Si no sabés, preguntás. Así crecemos juntos."
                             delay="0.1s"
                         />
                         <ValueCard
                             icon={<ShieldCheck className="w-8 h-8 text-primary" />}
                             title="Libertad"
-                            description="Defendemos la libertad de opinión y expresión en cada encuentro."
+                            description="Cada uno piensa como quiere. Acá se debate con respeto y buena onda, sin juicios ni prejuicios."
                             delay="0.2s"
                         />
                         <ValueCard
                             icon={<Lightbulb className="w-8 h-8 text-primary" />}
                             title="Aprendizaje"
-                            description="Mantenemos la humildad y las ganas constantes de aprender."
+                            description="Nadie nace sabiendo. Desde el que recién arranca hasta el más técnico, siempre hay algo nuevo para aprender."
                             delay="0.3s"
                         />
                         <ValueCard
                             icon={<Users className="w-8 h-8 text-primary" />}
                             title="Apertura"
-                            description="Abrazamos la creatividad y estamos siempre abiertos al cambio."
+                            description="No importa tu experiencia ni de dónde vengas. Si te interesa Bitcoin, ya sos parte."
                             delay="0.4s"
                         />
                     </div>
@@ -87,13 +90,13 @@ export default function About() {
                             <div>
                                 <h4 className="font-bold text-lg mb-2 text-primary">Nuestra Misión</h4>
                                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Conectar, educar y difundir conocimientos sobre Bitcoin, empoderando a la comunidad a través de talleres y eventos colaborativos.
+                                Conectar, educar y difundir conocimientos sobre Bitcoin a través de juntadas, charlas, talleres y proyectos colaborativos. Que cualquier persona pueda entender Bitcoin de manera simple y clara, sin miedo ni prejuicios. Y que se sienta parte de una comunidad que la ayuda a avanzar en su conocimiento.
                                 </p>
                             </div>
                             <div>
                                 <h4 className="font-bold text-lg mb-2 text-primary">Nuestra Visión</h4>
                                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
-                                    Ser la comunidad referente de Bitcoin en el Norte Argentino, impulsando el desarrollo de proyectos y la adopción real de la tecnología.
+                                Ser la comunidad referente de Bitcoin en Tucumán y el Norte Argentino, impulsando la economía circular y la adopción real de la tecnología en nuestra región.
                                 </p>
                             </div>
                         </div>
