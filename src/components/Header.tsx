@@ -30,7 +30,7 @@ export default function Header() {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-gray-600 dark:text-gray-300">
                     <Link href="/" className="hover:text-primary transition-colors">Inicio</Link>
-                    <Link href="/#about" className="hover:text-primary transition-colors">Acerca de</Link>
+                    <Link href="/#about" className="hover:text-primary transition-colors">Quienes somos</Link>
                     <Link href="/#resources" className="hover:text-primary transition-colors text-secondary dark:text-white">Recursos</Link>
                     <Link href="/#communities" className="hover:text-primary transition-colors">Comunidades</Link>
                     <Link href="/#contact" className="hover:text-primary transition-colors">Contacto</Link>

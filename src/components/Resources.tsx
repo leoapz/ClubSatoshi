@@ -33,7 +33,7 @@ export default function Resources() {
                         description="Paso a paso seguiros: aprende a comprar tus primeros satoshis sin miedo."
                         color="bg-green-50 dark:bg-green-900/20 text-green-600 dark:text-green-400"
                         delay="0.2s"
-                        href="/resources#buy"
+                        href="/resources/mi-primer-compra-satoshis"
                     />
 
                     {/* Card 3 - Video */}
@@ -44,7 +44,7 @@ export default function Resources() {
                         description="Guía para elegir y usar tu primera billetera Bitcoin."
                         color="bg-orange-50 dark:bg-orange-900/20 text-orange-600 dark:text-orange-400"
                         delay="0.3s"
-                        href="/resources#wallets"
+                        href="/resources/mi-primer-billetera-bitcoin"
                     />
                 </div>
 
