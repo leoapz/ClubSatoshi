@@ -2,8 +2,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Resources from "@/components/Resources";
-import Communities from "@/components/Communities";
-import BitcoinMap from "@/components/BitcoinMap";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -15,8 +13,8 @@ export default function Home() {
         <Hero />
         <About />
         <Resources />
-        <Communities />
-        <BitcoinMap />
+        {/* TODO: Should add Communities here */}
+        {/* TODO: Should add Bitcoin Map here */}
         <Contact />
       </main>
       <Footer />
