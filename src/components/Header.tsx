@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Search, Menu, X } from "lucide-react";
+import { Menu, X, XIcon } from "lucide-react";
 import { useState } from "react";
 import { getAssetPath } from "@/utils/assets";
 
@@ -17,7 +17,7 @@ export default function Header() {
                 <Link href="/" className="flex items-center gap-4 group">
                     <div className="relative h-10 w-10 shrink-0 rounded-full overflow-hidden">
                         <Image
-                            src={getAssetPath("/logo.png")}
+                            src={getAssetPath("/images/logo.svg")}
                             alt="Club Satoshi Icon"
                             fill
                             className="object-cover"
@@ -36,10 +36,13 @@ export default function Header() {
                 </nav>
 
                 {/* Actions */}
-                <div className="hidden md:flex items-center gap-4">
-                    <button className="text-gray-500 hover:text-primary transition-colors">
-                        <Search className="w-5 h-5" />
-                    </button>
+                <div className="hidden md:flex items-center gap-3">
+                    <Link href="https://x.com/ClubSatoshi_" className="w-8 h-8 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-600 dark:text-gray-300">
+                        <XIcon className="w-4 h-4" />
+                    </Link>
+                    <Link href="https://www.instagram.com/club.satoshi/" className="w-8 h-8 rounded-full bg-gray-100 dark:bg-white/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-gray-600 dark:text-gray-300">
+                        <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                    </Link>
                     <Link href="/unirse" className="px-4 py-2 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary-hover transition-colors shadow-lg shadow-orange-500/20">
                         Unirse al Club
                     </Link>
