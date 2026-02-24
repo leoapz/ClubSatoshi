@@ -30,7 +30,7 @@ export default function About() {
                             Nuestro propósito es empoderar a las personas y avanzar hacia un sistema financiero más justo y accesible, fomentando el pensamiento creativo y crítico desde Tucumán y el Norte Argentino.
                         </p>                        
                     </div>
-                    <div className="hidden md:block relative h-80 md:h-96 rounded-2xl overflow-hidden shadow-lg animate-fade-in" style={{ animationDelay: "0.4s" }}>
+                    <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-lg animate-fade-in" style={{ animationDelay: "0.4s" }}>
                         <Image
                             src={getAssetPath("/images/quienes-somos.webp")}
                             alt="Primera juntada de Club Satoshi"
